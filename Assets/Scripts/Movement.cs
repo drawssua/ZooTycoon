@@ -2,21 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    Fox fox = new Fox();
-    Jugi jugi = new Jugi();
-    Seal seal = new Seal();
-    Dove dove = new Dove();
-
-    public void Start()
-    {
-        fox.Howl();
-        jugi.Glomp();
-        dove.Tweet();
-        seal.Clap();
-        dove.Tweet();
-
-    }
-    float moveSpeed = 5.0f;
+    float moveSpeed = 3.0f;
     void Update()
     {
         float dt = Time.deltaTime;
