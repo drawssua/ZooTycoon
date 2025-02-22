@@ -11,8 +11,13 @@ public class Movement : MonoBehaviour
     {
         fox.Howl();
         jugi.Glomp();
+<<<<<<< Updated upstream
         dove.Tweet();
         seal.Clap();
+=======
+        seal.Clap();
+        dove.Tweet();
+>>>>>>> Stashed changes
     }
     float moveSpeed = 5.0f;
     void Update()
