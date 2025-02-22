@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Animal
@@ -33,7 +34,19 @@ public class Seal : Animal
 {
     public void Clap()
     {
+        int hMin = 0;
+        int hMax = 1;
+        int Hunger = 1;
         Debug.Log("* clap clap clap*");
+       
+        if (Hunger == hMin)
+        {
+            Debug.Log("seal: I AM HUNGRY");
+        }
+        else if(Hunger == hMax)
+        {
+            Debug.Log("seal: I am not to hungry");
+        }
     }
 }
 
@@ -41,7 +54,19 @@ public class Fox : Animal
 {
     public void Howl()
     {
+        int hMin = 0;
+        int hMax = 1;
+        int Hunger = 1;
         Debug.Log("ARUFFF");
+       
+        if (Hunger == hMin)
+        {
+            Debug.Log("Fox: I AM HUNGRY");
+        }
+        else if (Hunger == hMax)
+        {
+            Debug.Log("Fox: I am not to hungry");
+        }
     }
 }
 
@@ -54,7 +79,19 @@ public class Dove : Animal
 
     public void Tweet()
     {
+        int hMin = 0;
+        int hMax = 1;
+        int Hunger = 0;
         Debug.Log("Tweet");
+     
+        if (Hunger == hMin)
+        {
+            Debug.Log("Dove: I AM HUNGRY");
+        }
+        else if (Hunger == hMax)
+        {
+            Debug.Log("Dove: I am not to hungry");
+        }
     }
 }
 
@@ -62,10 +99,22 @@ public class Jugi : Animal
 {
     public float reactionTime;
     public float cutenessFactor;
-
+    
     public void Glomp()
     {
+        int hMin = 0;
+        int hMax = 1;
+        int Hunger = 0;
         Debug.Log("glomp");
+        
+        if (Hunger == hMin)
+        {
+            Debug.Log("Jugi: I AM HUNGRY");
+        }
+        else if (Hunger== hMax)
+        {
+            Debug.Log("Jugi: I am not to hungry");
+        }
     }
 
     public void BeCute()

@@ -10,6 +10,9 @@ public class Movement : MonoBehaviour
     public void Start()
     {
         fox.Howl();
+        jugi.Glomp();
+        dove.Tweet();
+        seal.Clap();
     }
     float moveSpeed = 5.0f;
     void Update()
