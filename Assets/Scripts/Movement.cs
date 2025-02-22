@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    fox Fox = new fox();
-    jugi Jugi = new jugi();
-    seal Seal = new seal();
-    dove Dove = new dove();
+    Fox fox = new Fox();
+    Jugi jugi = new Jugi();
+    Seal seal = new Seal();
+    Dove dove = new Dove();
 
     public void Start()
     {
-
-        Fox.Howl();
+        fox.Howl();
     }
     float moveSpeed = 5.0f;
     void Update()

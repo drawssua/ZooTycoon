@@ -1,121 +1,75 @@
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Security.Cryptography;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class  Animals
+public class Animal
 {
-    public float position;
+    public float weight;
     public float speed;
+    public Color color;
+    public int age;
+    public float hunger;
 
-public class Behaviour
-{ 
-    public float Hmin = 0.0f;
-    public float Hmax = 100.0f;
-    public float Hrandom = Random.value;
-}
-public abstract class HUNGER
-{
-    public float Hmin = 0.0f;
-    public float Hmax = 100.0f;
-    public float Hrandom = Random.value;
-}
-    public void move()
+    public void Eat()
     {
-        
+        hunger = 0.0f;
     }
 
-    public void drink()
+    public void Breathe()
     {
-       
+
     }
-    public void createChildren()
+
+    public void Drink()
     {
-       
+
     }
-    public void hunger()
+
+    public void CreateChildren()
     {
-        if (Hrandom <= Hmin)
-        {
-            Debug.Log("I am HUNGRY");
-        }
-        else if (Hrandom >= Hmax) 
-        {
-            Debug.Log("I am not to hungry");
-        } 
-         
+
     }
 }
-public class seal : Animals
+
+public class Seal : Animal
 {
-    public void Roar()
+    public void Clap()
     {
-        float Hmin = 0.0f;
-        float Hmax = 100.0f;
-        float Hrandom = Random.value;
-        Debug.Log("RAWWWRRRRR (idk)");
-        if (Hrandom <= Hmin)
-        {
-            Debug.Log("I am HUNGRY");
-        }
-        else if (Hrandom >= Hmax)
-        {
-            Debug.Log("I am not to hungry");
-        }
+        Debug.Log("* clap clap clap*");
     }
 }
-public class fox : Animals
+
+public class Fox : Animal
 {
     public void Howl()
     {
-        float Hmin = 0.0f;
-    float Hmax = 100.0f;
-    float Hrandom = Random.value;
-    Debug.Log("ARRUUUUUU");
-        if (Hrandom <= Hmin)
-        {
-            Debug.Log("I am HUNGRY");
-        }
-        else if (Hrandom >= Hmax)
-        {
-            Debug.Log("I am not to hungry");
-        }
+        Debug.Log("ARUFFF");
     }
 }
-public class dove : Animals
+
+public class Dove : Animal
 {
-    public void chirp()
+    public Quaternion Rotate()
     {
-        float Hmin = 0.0f;
-        float Hmax = 100.0f;
-        float Hrandom = Random.value;
-        Debug.Log("CHEP CHEP CHEP");
-        if (Hrandom <= Hmin)
-        {
-            Debug.Log("I am HUNGRY");
-        }
-        else if (Hrandom >= Hmax)
-        {
-            Debug.Log("I am not to hungry");
-        }
+        return Quaternion.Euler(0.0f, 0.0f, 90.0f);
+    }
+
+    public void Tweet()
+    {
+        Debug.Log("Tweet");
     }
 }
-public class jugi : Animals
+
+public class Jugi : Animal
 {
-    public void bark()
+    public float reactionTime;
+    public float cutenessFactor;
+
+    public void Glomp()
     {
-        float Hmin = 0.0f;
-        float Hmax = 100.0f;
-        float Hrandom = Random.value;
-        Debug.Log("woooooffffff");
-        if (Hrandom <= Hmin)
-        {
-            Debug.Log("I am HUNGRY");
-        }
-        else if (Hrandom >= Hmax)
-        {
-            Debug.Log("I am not to hungry");
-        }
+        Debug.Log("glomp");
+    }
+
+    public void BeCute()
+    {
+        cutenessFactor = float.MaxValue;
     }
 }
