@@ -4,15 +4,11 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class AnimalBehaviour
+public class  Animals
 {
-
-    
-
-
     public float position;
     public float speed;
-}
+
 public class Behaviour
 { 
     public float Hmin = 0.0f;
@@ -25,16 +21,11 @@ public abstract class HUNGER
     public float Hmax = 100.0f;
     public float Hrandom = Random.value;
 }
-public class wander : AnimalBehaviour
-{
-
     public void move()
     {
         
     }
-}
-public class Animals : Behaviour
-{
+
     public void drink()
     {
        
@@ -56,7 +47,7 @@ public class Animals : Behaviour
          
     }
 }
-public class seal : AnimalBehaviour
+public class seal : Animals
 {
     public void Roar()
     {
@@ -74,7 +65,7 @@ public class seal : AnimalBehaviour
         }
     }
 }
-public class fox : AnimalBehaviour
+public class fox : Animals
 {
     public void Howl()
     {
@@ -92,7 +83,7 @@ public class fox : AnimalBehaviour
         }
     }
 }
-public class dove : AnimalBehaviour
+public class dove : Animals
 {
     public void chirp()
     {
@@ -110,7 +101,7 @@ public class dove : AnimalBehaviour
         }
     }
 }
-public class jugi : AnimalBehaviour
+public class jugi : Animals
 {
     public void bark()
     {
