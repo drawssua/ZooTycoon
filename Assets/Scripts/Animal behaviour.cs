@@ -84,6 +84,7 @@ public class Dove : Animal
         int Hunger = 0;
         Debug.Log("Tweet");
      
+
         if (Hunger == hMin)
         {
             Debug.Log("Dove: I AM HUNGRY");
