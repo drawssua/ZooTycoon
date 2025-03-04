@@ -112,4 +112,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4061e015520099d45b82fe41d30fa4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDistance: 1.5
+  player: {fileID: 0}
+  detectionRange: 1.5
