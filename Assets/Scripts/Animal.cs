@@ -2,6 +2,7 @@ using UnityEngine;
 
 public abstract class Animal : MonoBehaviour
 {
+    public int age;
     //Random Movement in Habitat
     public class Field
     {
@@ -18,9 +19,12 @@ public abstract class Animal : MonoBehaviour
 
     protected abstract void SetRandomTargetPosition();
 
+    protected abstract void MyAge();
+
     void Start()
     {
         SetRandomTargetPosition();
+        MyAge();
     }
 
     void Update()

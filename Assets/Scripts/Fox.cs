@@ -15,4 +15,9 @@ public class Fox : Animal
         float randomY = Random.Range(minY, maxY);
         targetPosition = new Vector2(randomX, randomY);
     }
+    protected override void MyAge()
+    {
+        age = 11;
+        Debug.Log("Fox's Age: " + age);
+    }
 }

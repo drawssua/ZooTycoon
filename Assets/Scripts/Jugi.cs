@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Jugi : Animal
 {
-
     protected override void SetRandomTargetPosition()
     {
         Vector2 referencePos = Habitat.transform.position;
@@ -15,5 +14,10 @@ public class Jugi : Animal
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
         targetPosition = new Vector2(randomX, randomY);
+    }
+    protected override void MyAge()
+    {
+        age = 3141;
+        Debug.Log("Jugi's Age: " + age);
     }
 }

@@ -4,7 +4,6 @@ public class Seal : Animal
 {
     protected override void SetRandomTargetPosition()
     {
-
         Vector2 referencePos = Habitat.transform.position;
 
         float minX = referencePos.x - 1f;
@@ -15,5 +14,10 @@ public class Seal : Animal
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
         targetPosition = new Vector2(randomX, randomY);
+    }
+    protected override void MyAge()
+    {
+        age = 12;
+        Debug.Log("Seal's Age: " + age);
     }
 }
