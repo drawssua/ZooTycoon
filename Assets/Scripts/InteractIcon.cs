@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InteractionIcon : MonoBehaviour
+public class InteractIcon : MonoBehaviour
 {
     public GameObject player;
     public float detectionRange = 5f;
