@@ -176,6 +176,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3572322286894186602, guid: ab6b46b069753a5459cfae96350336ea, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1219446936}
     - target: {fileID: 42866621838857417, guid: ab6b46b069753a5459cfae96350336ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1002545
@@ -1789,6 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734b1d50206f08b4498b62a16b1850ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  age: 0
   moveSpeed: 1
   Habitat: {fileID: 1041161149}
 --- !u!1 &1170067252
@@ -3796,6 +3801,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3572322286894186602, guid: ab6b46b069753a5459cfae96350336ea, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1219446936}
     - target: {fileID: 42866621838857417, guid: ab6b46b069753a5459cfae96350336ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5026236
@@ -4206,6 +4215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892595ee8a07a214d8dfe56c1aacaf7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  age: 0
   moveSpeed: 0.25
   Habitat: {fileID: 170814764}
 --- !u!1 &1947529125
@@ -4327,6 +4337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b89bd7b67633634894e671ec4cbae30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  age: 0
   moveSpeed: 0.5
   Habitat: {fileID: 1708881580}
 --- !u!1001 &2048533624
@@ -4337,6 +4348,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3572322286894186602, guid: ab6b46b069753a5459cfae96350336ea, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1219446936}
     - target: {fileID: 42866621838857417, guid: ab6b46b069753a5459cfae96350336ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.505575
@@ -4505,6 +4520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b1b6571927e3043ab715abe940cef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  age: 0
   moveSpeed: 0.5
   Habitat: {fileID: 1697492082}
 --- !u!1001 &2983198107899495585
